@@ -89,7 +89,7 @@
 
            <div class="col-lg-5 ml-2">
                <div class="form-box">
-                   <?php include('alert.php'); $user = 'zaman';?>
+                   <?php include('alert.php'); $user = $_SESSION['name'];?>
                    <form action="../controller/create-order.php" method="post" id="customerForm">
                        <p class="alert alert-info">Total Amount: <?php echo $subtotal;?> tk </p>
                      

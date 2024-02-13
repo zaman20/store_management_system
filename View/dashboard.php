@@ -12,14 +12,17 @@
                 <h3>Total Sales</h3>
                 <p><?php echo $amount;?><sub>tk</sub></p>
                 </div>
+                <?php if( $_SESSION['role'] == 'Admin'){?>
                 <div class="box bg-primary">
                 <h3>Total Purchase</h3>
                 <p><?php echo $purchase;?><sub>tk</sub></p>
                 </div>
+
                 <div class="box bg-warning">
                 <h3>Reveniew</h3>
                 <p><?php echo $reveniew;?><sub>tk</sub></p>
                 </div>
+                <?php }?>
                 <a href="products.php">
                 <div class="box bg-info">
                   <h3>Product Items</h3>
