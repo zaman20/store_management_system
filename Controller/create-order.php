@@ -15,7 +15,7 @@
     
 
 
-    $sql = "INSERT INTO `orders`(`name`, `phone`,`shipping`,`p_name`, `img`, `price`,`qty`,`length`,`total`) VALUES ('$name','$phone','$user','$products','$images','$prices','$qtys','$count','$total')";
+    $sql = "INSERT INTO `orders`(`name`, `phone`,`user`,`p_name`, `img`, `price`,`qty`,`length`,`total`) VALUES ('$name','$phone','$user','$products','$images','$prices','$qtys','$count','$total')";
 
     $query = mysqli_query($conn, $sql);
 
