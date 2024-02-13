@@ -1,0 +1,474 @@
+/* =font= */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400;600&display=swap');
+
+body *{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    
+}
+
+.login-box{
+    width: 40%;
+    margin: 0 auto;
+    border: 2px solid gainsboro;
+    padding: 20px 25px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px goldenrod;
+}
+.login-box h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Lobster', cursive;
+}
+/* =======================
+Dashboard page css
+=========================*/
+.left-side{
+    background:#7200dc;
+    width: 20%;
+    float: left;
+    height: 100%;
+    position: fixed;
+    padding-left: 20px;
+    padding-top:15px;
+}
+.left-side h2{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+.left-side nav ul{
+    width: 100%;
+}
+.left-side nav ul li{
+    display: block;
+    padding: 5px 15px;
+    margin-left: -60px;
+}
+.left-side nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: .2s;
+}
+.left-side nav ul li:hover{
+    background:rgb(174, 92, 250);
+    transform: rotate(10);
+}
+.right-side{
+    width: 80%;
+    float:right;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.box{
+    float: left;
+    width: 21%;
+    background:white;
+    box-shadow: 0 0 6px orange;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    text-align: center;
+    transform: skewX(0deg);
+    transition: .3s;
+    margin-top: 15px;
+    color: #fff;
+
+}
+.box:hover{
+    transform: skewX(10deg);
+}
+.box h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.box  p{
+    font-size: 20px;
+}
+.glance{
+    margin-bottom: 290px;
+
+}
+.performance-chart{
+    padding-bottom: 30px;
+}
+/* ======================
+Product page css
+========================= */
+img.p-img {
+    width: 50px;
+    /* height: 100px; */
+}
+.product-list {
+    width: 98%;
+
+}
+.hproduct-list{
+    width: 60%;
+    margin: 0 auto;
+}
+.search-box{
+    margin-bottom: 20px;
+    width: 45%;
+    float: left;
+    clear: both;
+}
+.search-text{
+    width: 350px;
+    display: inline !important;
+}
+.search-btn{
+    background:rgb(87, 87, 248);
+    border: 0px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 7px 10px;
+    width: 105px;
+
+}
+.search-by-type{
+    width: 30%;
+    float: right;
+    margin-bottom: 20px;
+}
+.product-title{
+    width: 75%;
+    float: left;
+}
+.add-new-btn{
+    width: 200px;
+    margin-bottom: 25px;
+}
+.add-product-box{
+    width: 97%;
+    padding: 20px 10px;
+}
+/* ========
+pos page
+========== */
+.pos-product-table{
+    width:52%;
+    float: left;
+}
+.pos-list{
+    width: 47%;
+    float: right;
+    border-left: 2px solid #e1e0df;
+    padding-left: 15px;
+    
+}
+/* ==invoice== */
+.print-box {
+    border: 2px solid #dbdbdb;
+    clear: both;
+    padding: 10px;
+    border-radius: 5px;
+}
+.shop-info{
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.shop-info h2{
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    color: black;
+}
+.customer-info{
+    width: 30%;
+    float: right;
+}
+img.paid-image {
+    width: 200px;
+    margin-top: -61px;
+}
+/* ================
+print
+==============*/
+@media print{
+    .left-side, .print-btn{display: none;}
+    .print-box{
+        margin-left: -150px;
+    }
+    
+
+}
+/* ======================
+Product Home Page
+=======================*/
+.header-wrapper{
+    background:#fff;
+    box-shadow: 0 0 2px gray;
+    height: 60px;
+}
+.header{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.menu, .search, .cart{float:left;}
+.menu{
+    width: 24%;
+    display: flex;
+}
+.search{
+    width: 65%;
+    margin-left: 33px;
+}
+.home-search-box{
+    width: 90%;
+}
+.home-search-btn{
+    width: 10%;
+}
+.home-search-box {
+    width: 83%;
+    height: 39px;
+    border: 1px solid #cfcbcb;
+    border-radius: 0px 0px 0px 25px;
+    padding-left: 10px;
+    /* margin-top: 2px; */
+    border-right: 0px;
+    outline: navajowhite;
+}
+.home-search-btn {
+    width: 15%;
+    height: 41px;
+    margin-left: -4px;
+    border: 1px solid #fffafa;
+    border-radius: 0px 25px 0px 0px;
+    /* margin-top: -6px; */
+    background: #bf1414;
+    color: white;
+    font-size: 17px;
+}
+.cart-header {
+    font-size: 30px;
+    margin-left: 40px;
+    color: #bf1414;
+    margin-top: 6px;
+}
+i.fa-solid.fa-bars {
+    font-size: 30px;
+    color: #bf1414;
+    margin-top: 4px;
+    margin-left: 11px;
+}
+.slider-content{
+    clear: both;
+    height: 400px;
+}
+.slider-content img{
+    width: 100%;
+    height: 400px;
+}
+.splide__progress__bar {
+    height: 3px;
+    background: #f00303;
+  }
+.flash-sale-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.product-box {
+    border: 2px solid #ededed;
+    width: 260px;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+img.home-p-image {
+    width: 100%;
+    height: 200px;
+}
+.product-box h3{
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.product-box p{
+    font-size: 20px;
+    margin-left: 10px;
+    color: black;
+}
+sub.old-price {
+color: red;
+text-decoration: line-through;
+font-size: 16px;
+}
+.btn-box {
+    width: 95%;
+    margin: 0 auto;
+}
+.splide__arrows.splide__arrows--ltr {
+    display: none;
+}
+p.discount-tag {
+    background: #dd1111;
+    width: 75%;
+    height: 43px;
+    padding-top: 7px;
+    margin-left: 0px;
+    transform: rotate(332deg);
+    text-align: left;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: -22px;
+    overflow: hide;
+    padding-left: 28px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: cursive;
+    letter-spacing: 2px;
+    box-shadow: 0 0 6px 5px;
+}
+.product-area {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 61px;
+    clear: both;
+}
+.product-area h2 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.product-box.p-width {
+    width: 22%;
+    float: left;
+    margin-top: 20px;
+    margin: 3px;
+    margin-bottom: 35px;
+}
+a.cart-btn.btn.btn-dark {
+    width: 49%;
+    font-size: 13px;
+}
+a.buy-btn.btn.btn-success {
+    width: 48%;
+    font-size: 13px;
+}
+.footer-area {
+    width: 100%;
+    background: #4a4949;
+    color: #ebe6e6;
+    padding-left: 85px;
+    padding-right: 65px;
+    margin-top: 45px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    height: 200px;
+    clear: left;
+}
+.footer-box{
+    width: 33%;
+    float: left;
+}
+.footer-box h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer-box p{
+    font-size: 16px;
+    margin: 0;
+}
+.footer-box a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+.footer-box a:hover{
+    color:wheat;
+}
+.f-icon{
+    margin-right: 5px;
+}
+.f-icon:hover{
+    color: wheat;
+}
+.f-logo{
+    text-align: left;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
+    color: wheat;
+    clear: both;
+}
+.sidebar{
+    background: #bf1414;
+    width: 295px;
+    height: 100%;
+    position: fixed;
+    margin-left: -75px;
+    z-index: 999;
+    padding-top: 20px;
+    padding-left: 34px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+.sidebar-show{
+    margin-left: 0px;
+    visibility: visible;
+    opacity: 1;
+}
+.close-icon {
+    font-size: 27px;
+    color: white;
+    float: right;
+    width: 18%;
+}
+.sidebar ul li{
+    display: block;
+    padding: 5px;
+    margin-left: -32px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #e4e4e4;
+    font-weight: 500;
+}
+.sidebar ul li:hover {
+    background:#b80000;
+   
+}
+.menu-icon, .close-icon{cursor: pointer;}
+.buy-form{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.address-box, .mobile-box{
+    display: none;
+}
+.buy-form label {
+    color: red;
+}
+tr.delivery {
+    display: none;
+}
+tr.table-dark.delivery {
+    display: none;
+}
+.cart span {
+    font-size: 19px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+input.qty {
+    width: 50px !important;
+}
