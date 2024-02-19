@@ -10,8 +10,9 @@
             <li><a href="dashboard.php">Dashboard</a></li>
             <li><a href="transaction.php">Transactions</a></li>
             <li><a href="accounts.php">Accounts</a></li>
-            <?php }?>
+            
             <li><a href="category.php">Category</a></li>
+            <?php }?>
             <li><a href="products.php">Products</a></li>
             <li><a href="sell.php">Sale</a></li>
             <li><a href="logout.php">Log-Out</a></li>

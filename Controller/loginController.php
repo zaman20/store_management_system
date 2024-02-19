@@ -20,7 +20,7 @@
             header("Location:../view/dashboard.php");
         }
         else{
-            header("Location:../index.php?msg='Incorrect Login Details");
+            header("Location:../index.php?notice='Incorrect Login Details");
         }
 
 

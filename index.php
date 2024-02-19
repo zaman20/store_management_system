@@ -18,6 +18,7 @@
             <div class="col-lg-12">
                 <div class="login-box">
                     <h2>Store Management System</h2>
+                    <?php include('view/alert.php');?>
                     <form action="controller/loginController.php" method="post">
                         <label for="">User Name</label>
                         <input type="text" name="name" id="" class="form-control my-2">
